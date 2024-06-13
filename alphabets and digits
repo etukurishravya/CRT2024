@@ -1,0 +1,22 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include<string.h>
+int main() {
+    char str1[50];
+    scanf("%[^\n]s",str1);
+    int n,i,j;
+    n=strlen(str1);
+    for(i=1;i<n;i=i+2)
+    {
+        int r=(int)str1[i]-48;
+        for(j=1;j<=r;j++)
+        {
+            printf("%c",str1[i-1]);
+        }
+    }
+}
+/tmp/hvMOMfAFUW.o
+a3b4
+aaabbbb
+
+=== Code Execution Successful ===
