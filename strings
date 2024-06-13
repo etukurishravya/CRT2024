@@ -1,0 +1,27 @@
+/ Online C compiler to run C program online
+#include <stdio.h>
+#include <string.h>
+int main() {
+    char str1[50],str2[50],str3[100];
+    scanf("%s",str1);
+    scanf("%s",str2);
+    int i,j;
+    for(i=0;str1[i];i++)
+    {
+        str3[i]=str1[i];
+    }
+    for(j=0;str2[j];j++)
+    {
+        str3[i+j+1]=str2[j];
+    }
+    str3[i+j]='\0';
+    printf("%s",str3);
+    return 0;
+}
+python 
+language
+
+
+python
+
+=== Code Execution Successful ===
