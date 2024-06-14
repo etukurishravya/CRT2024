@@ -1,0 +1,90 @@
+Input Format
+
+Read a string
+
+Constraints
+
+string
+
+Output Format
+
+If the given string is a Palindrome display “Palindrome”, else display “Not a Palindrome”.
+
+Sample Input 0
+
+madam
+Sample Output 0
+
+Palindrome
+Sample Input 1
+
+java
+Sample Output 1
+
+Not a Palindrome
+Submissions: 381
+Max Score: 0
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+#include <stdio.h>
+2
+#include <string.h>
+3
+#include <math.h>
+4
+#include <stdlib.h>
+5
+int main() {
+6
+    char str1[50],str2[50];
+7
+    scanf("%s",str1);
+8
+    int i,n,j=0;
+9
+    n=strlen(str1);
+10
+    for(i=n-1;i>=0;i--)
+11
+    {
+12
+        str2[j]=str1[i];
+13
+        j++;
+14
+    }
+15
+    str2[j]='\0';
+16
+    i=strcmp(str1,str2);
+17
+    if(i==0)
+18
+        printf("Palindrome");
+19
+    else 
+20
+        printf("Not a Palindrome");
+21
+    
+22
+    
+23
+        
+24
+    return 0;
+25
+}
+26
+​
+Line: 2 Col: 9
+Run Code Submit CodeUpload Code as File 
+Test against custom input
+Testcase 0
+Testcase 1
+Congratulations, you passed the sample test case
