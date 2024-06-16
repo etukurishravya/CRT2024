@@ -1,0 +1,77 @@
+Write a program to generate the following series 7, 5, 8, 6, 9….
+
+Input Format
+
+Read n value
+
+Constraints
+
+1<=n<=10^7
+
+Output Format
+
+Print series
+
+Sample Input 0
+
+5
+Sample Output 0
+
+7 5 8 6 9
+Sample Input 1
+
+10
+Sample Output 1
+
+7 5 8 6 9 7 10 8 11 9
+Submissions: 158
+Max Score: 0
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+#include <stdio.h>
+2
+#include <string.h>
+3
+#include <math.h>
+4
+#include <stdlib.h>
+5
+int main() {
+6
+    int n;
+7
+    scanf("%d",&n);
+8
+    int i=1;
+9
+    int r1=7,r2=5;
+10
+    int x=n;
+11
+    n=n/2;
+12
+    while(i<=n){
+13
+        i++;
+14
+        printf("%d ",r1);
+15
+        r1++;
+16
+        printf("%d ",r2);
+17
+        r2++;
+18
+    }
+19
+    if(x%2!=0)
+20
+        printf("%d",r1);
+21
+    return 0;
+  }
