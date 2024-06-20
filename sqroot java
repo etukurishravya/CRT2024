@@ -1,0 +1,16 @@
+import java.util.*;
+class SqRoot
+{
+public static void main(String args[]){
+Scanner s=new Scanner(System.in);
+int a;
+a=s.nextInt();
+ double b=Math.sqrt(a);
+System.out.println(b);
+}
+}
+java -cp /tmp/oM2eDjZKlb/SqRoot
+8
+2.8284271247461903
+
+=== Code Execution Successful ===
