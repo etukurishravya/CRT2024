@@ -1,0 +1,73 @@
+Input Format
+
+Input consists of 2 integers. First input corresponds to the minimum value of the range. Second input corresponds to the maximum value of the range.
+
+Constraints
+
+1<=num1<=10^7
+
+Output Format
+
+The output is an integer which corresponds to the sum of range.
+
+Sample Input 0
+
+5
+10
+Sample Output 0
+
+45
+Sample Input 1
+
+25
+55
+Sample Output 1
+
+1240
+Submissions: 188
+Max Score: 0
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+}
+1
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Solution {
+5
+​
+6
+    public static void main(String[] args) {
+7
+        Scanner s=new Scanner(System.in);
+8
+        int min,max;
+9
+        min=s.nextInt();
+10
+        max=s.nextInt();
+11
+        int sum=0;
+12
+        int i=min;
+13
+        while(i<=max){
+14
+            sum+=i;
+15
+            i++;
+16
+        }
+17
+        System.out.printf("%d",sum);
+18
+    }
+19
+}
